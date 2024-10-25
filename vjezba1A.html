@@ -71,5 +71,51 @@
 
  <hr>
 
- 
+<!--  Tablice rješene -->
+
+<!-- HTML forme -->
+ <form action="zadace/zadaca1.html" method="get">
+    <label for="name">Ime: </label>
+    <input type="text" name="name" id="name" size="10" maxlength="5" placeholder="unesi ime...">  <br>
+    <label for="prezime">Prezime:</label>
+    <input type="text" name="prezime" id="prezime" pattern="[A-Za-z]{3}">  <br>
+
+    <label>Izaberi najbolji programski jezik:</label> <br>
+    <input type="radio" name="jezik" id="html" value="html" checked>
+    <label for="html">HTML</label>  <br>
+    <input type="radio" name="jezik" id="c" value="c">
+    <label for="c">C#</label>  <br>
+    <input type="radio" name="jezik" id="js" value="js">
+    <label for="js">JS</label>
+    <br>
+    <label>Danas od predmeta imamo:</label> <br>
+    <input type="checkbox" name="hrv" id="hrv" value="hrv">
+    <label for="hrv">Hrvatski</label> <br>
+    <input type="checkbox" name="mat" id="mat" value="mat">
+    <label for="mat">Matematika</label> <br>
+    <input type="checkbox" name="sjwp" id="sjwp" value="sjwp">
+    <label for="sjwp">Skriptni jezici</label> <br>
+    <input type="checkbox" name="fiz" id="fiz" value="fiz">
+    <label for="fiz">Fizika</label> <br>
+    <label>Izaberi boju:</label>
+    <input type="color">  <br>
+    <label>Izaberi datum:</label>
+    <input type="date">  <br>
+    <label for="pass">Unesi password</label>
+    <input type="password" name="pass" id="pass"> <br>
+    <label for="email">Unesi email adresu:</label>
+    <input type="email" name="email" id="email" required> <br>
+    <label>Unesi raspon:</label>
+    <input type="range">  <br>
+    <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+
+    <input type="submit" value="Pošalji">
+    <input type="reset" value="Poništi">
+
+ </form>
 
