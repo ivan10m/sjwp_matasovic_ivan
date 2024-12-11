@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flags CSS</title>
+    <style>
+        .relative {
+            width: 450px;
+            height: 300px;
+            background-color: cornflowerblue;
+            position: relative;
+            left: 100px;
+        }
+        .stripe {
+            width: 450px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            /*background-color: black;*/
+            position: absolute;
+            left: 0px;
+            border-top: 150px solid transparent;
+            border-bottom: 150px solid transparent;
+            border-left: 190px solid #000; /* Crni trokut */
+        }
+   
+    </style>
+</head>
+<body>
+    <h2>Bahamas Flags</h2>
+    <div class="relative">
+        <div class="stripe"></div>
+        <div class="triangle"></div>
+    </div>
+
+</body>
+</html>
