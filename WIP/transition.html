@@ -9,7 +9,7 @@
             width: 200px;
             height: 200px;
             background-color: burlywood;
-            transition: width 2s;
+            transition: width 2s cubic-bezier(0.23, -0.53, 0.76, 1.56);
         }
 
         .drugi {
@@ -39,6 +39,17 @@
         #html-spinner:hover {
             transform: rotate(360deg);
         }
+
+        .cubic {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: transform 500ms;
+        }
+
+        .cubic:hover {
+            transform: translateY(-40px);
+        }
         
     </style>
 </head>
@@ -52,6 +63,7 @@
     <div id="html-spinner">
 
     </div>
+    <div class="cubic"></div>
 
 </body>
 </html>
