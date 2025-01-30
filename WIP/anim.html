@@ -5,35 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animation</title>
     <style>
-        .loading {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 4px solid #fcd779;
-            border-top: 4px solid white;
-            transition: transform 2s;
-        }
-
-        .box{
+        .box {
+            width: 150px;
+            height: 150px;
+            background: blue;
+            box-sizing: border-box;
+            color: white;
+            padding: 55px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            font-weight: bolder;
             position: absolute;
             top: 200px;
-            left: 250px;
-            width: 250px;
-            height: 250px;
-            background-color: blue;
-            color: white;
-            box-sizing: border-box;
-            padding: 100px;
-            font-size: 1.8rem;
-            font-weight: bolder;
-            
+            left: 200px;
+
             animation-duration: 3s;
             animation-name: spin;
             animation-timing-function: ease;
             animation-delay: 1s;
             animation-iteration-count: infinite;
             animation-direction: normal;
-            animation-fill-mode: forwards;
             animation-play-state: running;
         }
 
@@ -41,28 +32,26 @@
             animation-play-state: paused;
         }
 
-        @keyframes spin{
+        @keyframes spin {
             0% {
 
             }
-
             50% {
-               scale: 2;
-               transform: rotate(0);
-               border-radius: 0;
+                scale: 2;
+                transform: rotate(0);
+                border-radius: 0;
             }
-
-            100% {
+            100%{
                 transform: rotate(360deg);
                 border-radius: 50%;
                 scale: 2;
             }
         }
+
     </style>
 </head>
 <body>
-    <h2>Animation CSS</h2>
-    <div class="loading"></div>
+    <h2>Animations</h2>
     <div class="box">Text</div>
 </body>
 </html>
